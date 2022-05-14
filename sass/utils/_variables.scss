@@ -1,0 +1,82 @@
+
+    $blue-main:#2196F3;
+    $black-main:#212121;
+    $gray-main:#757575;
+    $white-main:#ffffff;
+    $team-color:#F5F4FA;
+    $logo-footer:#2F303A;
+    $address-color:rgba(255, 255, 255, 0.6);
+    $back-cards: #EEEEEE;
+    $client-color:#AFB1B8;
+    $cubic:cubic-bezier(0.4, 0, 0.2, 1);
+
+
+
+
+    body{
+        font-family:'Roboto', sans-serif;
+        font-style: normal;
+        background-color: $white-main;
+        font-size: 14px;
+        line-height: 1.714;
+        letter-spacing: 0.03em;
+        color:  $gray-main;
+        
+    }
+    ul,li{list-style-type:none;
+    padding-left: 0px;
+    margin: 0;
+    padding: 0;}
+    
+    h1,h2,h3,h4,p{
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+            width: 1200px;
+            padding: 0 15px;
+            text-align: center;
+            margin: auto;}
+    
+     %title{
+    
+            margin-bottom: 50px;
+            color: $black-main;   
+            font-size: 36px;
+            line-height: 1.66;
+            text-align: center;
+            }
+    
+     .visually-hidden { 
+                position: absolute; 
+                width: 1px; 
+                height: 1px; 
+                margin: -1px; 
+                border: 0; 
+                padding: 0; 
+                white-space: nowrap; 
+                clip-path: inset(100%); 
+                clip: rect(0 0 0 0); 
+                overflow: hidden; 
+              } 
+    
+    .section{
+                padding: 94px 0;       }
+
+                %btn{
+                    text-align: center;
+                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+                    border-radius: 4px; 
+                    border: none;   
+                
+                    color: $white-main;
+                    background-color: $blue-main;
+                    
+                    cursor: pointer;    
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 1.88;
+                    letter-spacing: 0.06em; 
+                }               
+    
+  

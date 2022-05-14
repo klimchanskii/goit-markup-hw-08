@@ -1,0 +1,134 @@
+.back-footer
+{background-color: $logo-footer ;
+ padding-top: 60px;
+ padding-bottom: 60px;
+}
+.footer{
+    text-align: start; 
+    display: flex;
+     align-items: baseline;   }
+
+ .footer__logo {
+     @extend .header__logo;
+     
+     margin-top: 0;
+     margin-bottom: 20px;
+     display: block ;
+     .footer__logo-white
+    {color:$white-main;}
+ }    
+.footer__address
+    { color: $team-color;     
+    font-style: normal;  
+    }
+ .footer__address-bottom
+    {margin-bottom: 9px;}
+
+.footer__contact{
+    display: block;                            
+    color: $address-color;
+    text-decoration: none;
+    font-style: normal; 
+ }
+ 
+//  Блок соц-сети
+ .footer-social{
+     margin-left: 70px;
+ }
+
+ .footer-social__title{
+     font-weight: 700;
+    
+     line-height: 1.142;
+ 
+     color: $white-main;
+     text-transform: uppercase;
+     margin-bottom: 20px;       
+ }
+ 
+     /* icon-footer */
+ .footer-social__list{
+     display: flex;
+    
+ }
+
+      
+ .footer-social__link{
+     border-radius: 50%;
+     background-color: rgba(255, 255, 255, 0.1);
+     color: $white-main;
+     width: 44px;
+     height: 44px;
+     display: flex;
+     
+     
+     justify-content: center;
+     align-items: center;
+     transition: background-color 250ms $cubic;
+ }           
+ .footer-social__item :hover.footer-social__link {
+     background-color: $blue-main;}
+ .footer-social__item +.footer-social__item{
+     margin-left: 10px;
+ }
+ .footer-social__icon{
+     width: 20px;
+     height: 20px  ; 
+     fill: currentColor;             
+ }     
+
+
+
+
+
+ /* newsletter */
+.newsletter{
+margin-left: auto;
+}            
+.newsletter__title{
+display: block;
+text-transform: uppercase;
+margin-bottom: 20px;
+
+color: $white-main;
+
+font-weight: 700;
+line-height: 16px;
+}
+
+.newsletter__email{
+    padding: 15px 16px;
+
+    width: 358px;
+
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    background-color: rgba(0, 0, 0, 0);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.6)
+}
+.newsletter__email::placeholder{
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.6)
+}
+.newsletter__button{
+    @extend %btn;
+    position: relative;
+    padding: 10px 62px 10px 29px;
+    margin-left: 12px;
+
+
+}
+.newsletter__icon{
+    position: absolute;
+    top: 13px;
+    right: 28px;
+
+}
+
+  

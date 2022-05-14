@@ -1,0 +1,43 @@
+.about-us{
+    @extend %title;
+}
+.about-us__list{
+    display: flex;}
+.about-us__item{
+    position: relative;
+}
+.about-us__item:nth-child(-n + 2){margin-right: 30px;}
+.about-us__desc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    position: absolute;
+
+    bottom: 0px;
+    height: 70px;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    
+
+    font-weight: 700;
+    line-height: 1.142;
+    color: $white-main;
+    text-transform: uppercase;
+    background-color: rgba(47, 48, 58, 0.8);
+    
+}
+
+
+
+.section-zero{
+    padding-top: 0;
+
+    
+}
+.about-us__img{
+    display: block;
+    max-width: 370px;
+    
+}

@@ -1,0 +1,94 @@
+.header{display: flex;
+    align-items: center;
+    border-bottom: 1px solid $back-cards;
+}
+
+    .header__logo{color: $blue-main;
+        display: inline-flex;
+        margin-right: 93px;
+        
+        text-decoration: none;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.192;
+        letter-spacing: 0.03em;  
+        
+      }
+      .header__logo-black{color: $black-main;}
+
+    .header__link {color:$black-main;
+        display: block;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        cursor: pointer;  
+        
+        
+        font-style: normal;
+        font-weight: 500;           
+        line-height: 1.142;
+        letter-spacing: 0.02em;
+        text-decoration: none;   
+        
+        transition: color 250ms $cubic;
+
+        &:focus,
+        &:active,            
+        &:hover   
+        {color: $blue-main;}
+    
+    }
+    .header__item+.header__item{margin-left: 50px;}
+
+    .header__link--border{
+        color: $blue-main;
+        position: relative;
+        &::after{
+            position: absolute;
+        content: '';
+        display: block;
+        bottom: -3px;
+        
+        height: 4px;
+        width: 100%;
+
+        background-color: $blue-main;
+        border-radius: 2px;
+        }    }
+     
+        /* contact */
+    .contact{     
+        display: flex;      
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.142;
+        letter-spacing: 0.02em;
+        margin-left: 305px;
+         }
+        
+        .contact__info{
+            display: flex;
+            align-items: center;
+            
+            color: $gray-main;
+            text-decoration: none;     
+            transition: color 250ms $cubic ;  
+        
+            &:focus,
+            &:hover 
+            {color: $blue-main;}           
+            }
+        
+            .contact__item{
+                margin-left: 30px;
+            }
+
+        /* icon-svg */
+        .contact__icon {
+            margin-right: 10px;
+            fill: currentColor;
+            &:hover{color: currentColor ;   }
+            }
+          
+        
