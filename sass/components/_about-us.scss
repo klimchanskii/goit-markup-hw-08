@@ -1,10 +1,16 @@
+
+    
 .about-us{
     @extend %title;
 }
 .about-us__list{
-    display: flex;}
+    
+    display: flex;
+    
+}
 .about-us__item{
     position: relative;
+    
 }
 .about-us__item:nth-child(-n + 2){margin-right: 30px;}
 .about-us__desc{
@@ -33,11 +39,18 @@
 
 .section-zero{
     padding-top: 0;
-
-    
+ 
 }
 .about-us__img{
     display: block;
     max-width: 370px;
     
 }
+
+@media screen and (max-width: 600px) {
+    .section-zero{
+    
+      visibility: hidden;
+      display: none;
+    }
+  }

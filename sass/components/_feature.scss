@@ -1,32 +1,47 @@
-.feature{
-    display: flex; 
-        }
-
-.feature__item:nth-last-child(n+2){
-   margin-right: 30px;      }
-   .feature__item{text-align: left;
-
-   }
-
-
-
 .feature__title{
-    margin-bottom: 10px;
-    
-    color: $black-main;                  
-    line-height: 1.42;
-    font-size: 14px;
-    text-transform: uppercase;          } 
-    
-    /* icon */
-    .feature__tumb{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        width: 270px;
-        height: 120px;
-        margin-bottom: 30px;
+        margin-bottom: 10px;
         
-        background-color: $team-color;
-        }
+        color: $black-main;                  
+        line-height: 1.42;
+        font-size: 14px;
+        text-transform: uppercase;
+
+}
+.feature__tumb{
+    max-width: 450px;
+    margin-bottom: 30px;
+    height: 120px;
+    margin-top: 30px;
+}
+.feature__text{
+    text-align: start;
+}
+
+
+@media screen and (min-width: 900px) {
+    
+    .feature{
+        display: flex; 
+            }
+    
+    .feature__item:nth-last-child(n+2){
+       margin-right: 30px;      }
+       .feature__item{text-align: left;
+    
+       }
+    
+        
+        /* icon */
+        .feature__tumb{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+            width: 270px;
+           
+            
+            
+            background-color: $team-color;
+            }
+
+}
