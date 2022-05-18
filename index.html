@@ -16,11 +16,34 @@
 </head>
 <!-- HEADER -->
 <body>
-<header>
-    <div class="header container">
-    
-        <div class="header__flex">
-        <a href="/index.html" class="header__logo">Web<span class="header__logo-black">Studio</span> </a>  
+    <header>
+        <div class="header container">
+           
+        <nav class="header__nav" > 
+            
+            <a href="/index.html" class="header__logo">Web<span class="header__logo-black">Studio</span> </a>  
+        <ul class="header__list" >
+            <li class="header__item"> <a href="./index.html" class="header__link header__link--border" >Студия</a></li>
+            <li class="header__item"><a href="./portfolio.html" class="header__link "> Портфолио</a></li>
+            <li class="header__item"><a href="" class="header__link"> Контакты</a></li>
+        </ul>
+        </nav > 
+        <ul class="contact">
+            <li>
+                <a href="mailto:info@devstudio.com" class="contact__info">
+                    <svg class="contact__icon" width="16px" height="12px" >
+                        <use href="./images/icons.svg#icon-envelope" > </use></svg>
+                
+                info@devstudio.com</a></li>
+            <li class="contact__item">
+                <a href="tel:+380961111111" class="contact__info">
+                <svg class="contact__icon" width="10px" height="16px" >
+                    <use href="./images/icons.svg#icon-smartphone"  >
+                </use></svg>
+                
+                +38 096 111 11 11</a></li>
+        </ul>
+        <!-- button -->
         <button 
         class="menu-button is-open"
          type="button"
@@ -33,39 +56,41 @@
                 <use class="menu-button__open" href="./images/symbol-defs.svg#icon-open-menu"></use>
                 <use class="menu-button__close" href="./images/symbol-defs.svg#icon-close-menu"></use>
             </svg>
-        </button></div>
-        <div class=" header__adapt " id="header__adapt" data-menu>
-    <ul class="header" >
-        <li class="header__item"> <a href="./index.html" class="header__link header__link--border" >Студия</a></li>
-        <li class="header__item"><a href="./portfolio.html" class="header__link "> Портфолио</a></li>
-        <li class="header__item"><a href="" class="header__link"> Контакты</a></li>
-    </ul>
-    
-    <ul class="contact ">
-        <li >
-            <a href="mailto:info@devstudio.com" class="contact__info">
-                <svg class="contact__icon" width="16px" height="12px" >
-                    <use href="./images/icons.svg#icon-envelope" > </use></svg>
-            
-            info@devstudio.com</a></li>
-        <li class="contact__item">
-            <a href="tel:+380961111111" class="contact__info contact__info-blue">
-            <svg class="contact__icon" width="10px" height="16px" >
-                <use href="./images/icons.svg#icon-smartphone"  >
-            </use></svg>
-            
-            +38 096 111 11 11</a></li>
-    </ul>
-        <ul class="header__social">
-            <li class="header__social-item"><a class="header__social-link" href="">Instagram</a></li>
-            <li class="header__social-item"><a class="header__social-link" href="">Twitter</a></li>
-            <li class="header__social-item"><a class="header__social-link" href="">Facebook</a></li>
-            <li class="header__social-item"><a class="header__social-link" href="">LinkedIn</a></li>
-        </ul>
-</div>
-       </div>
+        </button>
         
-</header>
+
+        <!-- mobail-menu -->
+        <div class="mobail-container data-menu" data-menu>
+        <nav class="mobail-menu" > 
+            
+            <!-- <a href="/index.html" class="header__logo">Web<span class="header__logo-black">Studio</span> </a>   -->
+        <ul class="mobail-menu__list" > 
+            <li class="mobail-menu__item"> <a href="./index.html" class="mobail-menu__link mobail-menu__link--active" >Студия</a></li>
+            <li class="mobail-menu__item"><a href="./portfolio.html" class="mobail-menu__link "> Портфолио</a></li>
+            <li class="mobail-menu__item"><a href="" class="mobail-menu__link"> Контакты</a></li>
+        </ul>
+        </nav > 
+        <ul class="mobail-menu__contact">
+            <li class="mobail-menu__contact__item">
+                <a href="tel:+380961111111" class="mobail-menu__tel">   
+                +38 096 111 11 11</a></li>
+            <li>
+                <a href="mailto:info@devstudio.com" class="mobail-menu__mail">
+
+                info@devstudio.com</a></li>
+            
+        </ul>
+        <ul class="mobail-menu__social">
+            <li class="mobail-menu__social-item"><a class="mobail-menu__social-link" href="">Instagram</a></li>
+            <li class="mobail-menu__social-item"><a class="mobail-menu__social-link" href="">Twitter</a></li>
+            <li class="mobail-menu__social-item"><a class="mobail-menu__social-link" href="">Facebook</a></li>
+            <li class="mobail-menu__social-item"><a class="mobail-menu__social-link" href="">LinkedIn</a></li>
+        </ul>
+            </div>
+            
+           </div>
+            
+    </header>
 <!-- MAIN CONTENT -->
     <main>
     <!-- Section hero -->
@@ -131,7 +156,7 @@
         <div class="container">
         <h2 class="section-team__title">Наша команда</h2>
         <ul class="card">
-            <li><img class="card__img" src="./images/img-3.jpg" alt="Игорь Демьяненко" width="450" height="460" >
+            <li class="card__team"><img class="card__img" src="./images/img-3.jpg" alt="Игорь Демьяненко" width="270" height="270" >
                 <h3 class="card__name">Игорь Демьяненко</h3> <p class="card__profession">Product Designer</p> 
                     <ul class="card__list">
                         <li class="card__item" ><a  class="card__tumb" href=""><svg class="card__icon" width="20px" height="20px" >
@@ -147,7 +172,7 @@
                             <use href="./images/icons.svg#icon-linkedin"></use></svg></a></li>
                     </ul>
                   </li>
-            <li><img class="card__img" src="./images/img-2.jpg" alt="Ольга Репина" width="450" height="460">
+            <li class="card__team"><img class="card__img" src="./images/img-2.jpg" alt="Ольга Репина" width="270" height="270">
                 <h3 class="card__name">Ольга Репина</h3> <p class="card__profession">Frontend Developer</p> 
                 <ul class="card__list">
                     <li class="card__item" ><a  class="card__tumb" href=""><svg class="card__icon" width="20px" height="20px" >
@@ -164,7 +189,7 @@
                 </ul>
             </li>
 
-            <li><img class="card__img" src="./images/img-1.jpg" alt="Николай Тарасов" width="450" height="460">
+            <li class="card__team"><img class="card__img" src="./images/img-1.jpg" alt="Николай Тарасов" width="270" height="270">
                 <h3 class="card__name">Николай Тарасов</h3><p class="card__profession">Marketing</p> 
                 <ul class="card__list">
                     <li class="card__item" ><a  class="card__tumb" href=""><svg class="card__icon" width="20px" height="20px" >
@@ -180,7 +205,7 @@
                         <use href="./images/icons.svg#icon-linkedin"></use></svg></a></li>
                 </ul>
             </li>
-            <li><img class="card__img" src="./images/img.jpg" alt="Михаил Ермаков" width="450" height="460"> 
+            <li class="card__team"><img class="card__img" src="./images/img.jpg" alt="Михаил Ермаков" width="270" height="270"> 
                 <h3 class="card__name">Михаил Ермаков</h3><p class="card__profession">UI Designer</p> 
                 <ul class="card__list">
                     <li class="card__item" ><a  class="card__tumb" href=""><svg class="card__icon" width="20px" height="20px" >

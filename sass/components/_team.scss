@@ -5,7 +5,12 @@
     background-color: $team-color;
  }
  .card{
-     display: block;
+     display: flex;
+     flex-wrap: wrap;
+     gap: 30px;
+     @media screen and (min-width:1200px){
+         flex-wrap: nowrap;
+     }
 
      & li{
         background-color: $white-main;
@@ -14,18 +19,20 @@
         0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
-        @media screen and (max-width:600px)
-        {margin-bottom: 30px;}
-        }
-    //  & li+li{
-
-        
-        
-        
-        
-    //  }
+      
+      }
+      .card__team {
+          flex: 100%;
+      @media screen and (min-width: 768px)
+      {
+          flex: calc(50% - 30px);
+      }
+      @media screen and (min-width: 1200px)
+      {
+          flex: calc(25% - 90px);
+      }
     
-    
+    }
  }
  
  .card__name{
@@ -45,6 +52,8 @@
      text-align: center;   
      }
      .card__img{
+        width: 100%;
+        height: auto;
         
          display: block;   
          
