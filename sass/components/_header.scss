@@ -1,6 +1,15 @@
 .header{display: flex;
     align-items: center;
     border-bottom: 1px solid $back-cards;
+    position: fixed;
+    z-index: 999;
+    background-color: $white-main;
+    top: 0;
+    width: 100%;
+    @media screen and (min-width:1200px){
+        position: relative;
+        
+    }
     
 }
 .header__nav{
@@ -19,20 +28,36 @@
     {
         display: none;
     }
+    @media screen and (min-width:768px) {
+        display: flex;
+        margin-left: 88px; 
+    }
+    @media screen and (min-width:1200px) {
+        
+      margin-left: 93px; 
+      }
 }
 
     .header__logo{color: $blue-main;
         display: inline-flex;
-        margin-right: 93px;
+        
         
         text-decoration: none;
         font-family: 'Raleway';
         font-style: normal;
         font-weight: 700;
-        font-size: 26px;
-        line-height: 1.192;
+        font-size: 24px;
+        line-height: 28px;
         letter-spacing: 0.03em;  
-        
+        @media screen and (min-width:768px){
+          
+        }
+        @media screen and (min-width:1200px) {
+          font-size: 26px;
+        line-height: 1.192;  
+        margin-right: 93px; 
+        }
+         
       }
       .header__logo-black{color: $black-main;}
 
@@ -82,10 +107,23 @@
         font-weight: 500;
         line-height: 1.142;
         letter-spacing: 0.02em;
-        margin-left: 305px;
+        
         @media screen and (max-width:768px)
         {
             display: none;
+        }
+        @media screen and (min-width:768px) {
+            display: flex;
+            flex-direction: column;
+            margin-left: auto;
+            font-size: 12px;
+            line-height: 14px;
+            margin-right: 15px;
+            
+            
+        }
+        @media screen and (min-width:1200px) {
+            margin-left: 305px; 
         }
          }
         
@@ -101,15 +139,27 @@
             &:hover 
             {color: $blue-main;}           
             }
-        
-            .contact__item{
+            @media  screen and (min-width:768px) {
+                .contact__item{
+                     margin-top: 10px;
+                 }}
+
+        @media  screen and (min-width:1200px) {
+           .contact__item{
                 margin-left: 30px;
             }
-
+ 
+            
+        }
+            
         /* icon-svg */
         .contact__icon {
-            margin-right: 10px;
+
+            margin-right: 8px;
             fill: currentColor;
+            @media screen and(min-width:1200px) {
+            margin-right: 10px;    
+            }
             &:hover{color: currentColor ;   }
             }
-                        
+                    
