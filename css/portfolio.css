@@ -509,17 +509,30 @@ h1, h2, h3, h4, p {
           justify-content: center;
   margin-left: auto;
   margin-right: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 30px;
 }
 
 @media screen and (min-width: 768px) {
   .works {
+    max-width: 800px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .works {
+    max-width: 100%;
   }
 }
 
