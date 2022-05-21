@@ -51,13 +51,15 @@ justify-content: flex-start;
     .works{
        display: flex;
        flex-direction: column;
-       justify-content: center;
+       
        margin-left: auto;
        margin-right: auto;
-       align-items: center;
        
-
-    
+       
+       @media screen and (max-width:767px) {
+        align-items: center;
+        justify-content: center;
+    }
     //    flex: 100%;
        gap: 30px;
     
@@ -146,11 +148,17 @@ justify-content: flex-start;
 
 
    /* position */
-   .works__img{
+   .works__tumb-img{
        position: relative;  
        overflow: hidden; 
-       display: block;      
+       display: block;    
+       object-fit: cover;
+         width: 100%;  
       
+   }
+   .works__img{
+    width: 100%;
+    object-fit: cover;
    }
    .works__site{
        position: absolute;
