@@ -3,6 +3,16 @@
  padding-top: 60px;
  padding-bottom: 60px;
 }
+@media screen and (min-width:1200px){
+ .footer{
+     display: flex;
+     align-items: flex-start;
+     text-align: left;
+     
+
+}   
+}
+
 
 
  .footer__logo {
@@ -35,6 +45,10 @@
     margin: 60px 0;
     @media  screen and (min-width:768px) {
         margin: 0;
+        
+    }
+    @media  screen and (min-width:1200px) {
+        margin-left: 70px;
         
     }
  }
@@ -103,6 +117,10 @@ line-height: 16px;
     margin-top:60px;
     
 }
+@media  screen and (min-width:1200px) {
+    margin:0px;
+    
+}
 }
 
 .newsletter__email{
@@ -125,6 +143,12 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
         width: 450px;
         margin: 0 auto;
     }
+    @media screen and (min-width:1200px){
+        display: inline-block;
+        width: 358px;
+        margin: 0 auto;
+    }
+
 }
 .newsletter__email::placeholder{
     font-size: 16px;

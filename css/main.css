@@ -131,6 +131,12 @@ h1, h2, h3, h4, p {
   }
 }
 
+@media screen and (min-width: 1600px) {
+  .header__nav {
+    margin-left: 200px;
+  }
+}
+
 .header__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -176,7 +182,6 @@ h1, h2, h3, h4, p {
   .header__logo, .footer__logo {
     font-size: 26px;
     line-height: 1.192;
-    margin-right: 93px;
   }
 }
 
@@ -258,7 +263,19 @@ h1, h2, h3, h4, p {
 
 @media screen and (min-width: 1200px) {
   .contact {
-    margin-left: 305px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .contact {
+    margin-right: 200px;
   }
 }
 
@@ -313,11 +330,47 @@ h1, h2, h3, h4, p {
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: #2F303A;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/back.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/back.jpg);
-  -o-object-fit: cover;
-     object-fit: cover;
-  max-width: 1600px;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/header/mob.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/header/mob.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: block;
+  max-width: 100%;
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/header/mob@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/header/mob@2x.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/header/tablet.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/header/tablet.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/header/tablet@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/header/tablet@2x.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/header/hero.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/header/hero.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/header/hero@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/header/hero@2x.jpg");
+  }
 }
 
 .hero__text {
@@ -415,6 +468,15 @@ h1, h2, h3, h4, p {
   .feature__item {
     text-align: left;
   }
+}
+
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .feature__item {
+    width: 270px;
+  }
+}
+
+@media screen and (min-width: 768px) {
   /* icon */
   .feature__tumb {
     display: -webkit-box;
@@ -671,6 +733,18 @@ h1, h2, h3, h4, p {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    text-align: left;
+  }
+}
+
 .footer__logo {
   margin-left: 0;
   margin-top: 0;
@@ -705,6 +779,12 @@ h1, h2, h3, h4, p {
 @media screen and (min-width: 768px) {
   .footer-social {
     margin: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-social {
+    margin-left: 70px;
   }
 }
 
@@ -779,6 +859,12 @@ h1, h2, h3, h4, p {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .newsletter__title {
+    margin: 0px;
+  }
+}
+
 .newsletter__email {
   padding: 15px 16px;
   width: 100%;
@@ -797,6 +883,14 @@ h1, h2, h3, h4, p {
   .newsletter__email {
     display: block;
     width: 450px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .newsletter__email {
+    display: inline-block;
+    width: 358px;
     margin: 0 auto;
   }
 }

@@ -54,6 +54,10 @@
     // .feature__item:nth-last-child(n+2){
     //    margin-right: 30px;      }
        .feature__item{text-align: left;
+        @media screen and (min-width:1200px) {
+            width: 270px;
+            
+        }
     
        }
     
