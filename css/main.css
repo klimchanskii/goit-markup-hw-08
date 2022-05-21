@@ -8,7 +8,7 @@ body {
   color: #757575;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
   body {
     padding-top: 60px;
   }
@@ -109,9 +109,17 @@ h1, h2, h3, h4, p {
   width: 100%;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .header {
     position: relative;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 
@@ -131,9 +139,9 @@ h1, h2, h3, h4, p {
   }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .header__nav {
-    margin-left: 200px;
+    margin-left: auto;
   }
 }
 
@@ -275,9 +283,9 @@ h1, h2, h3, h4, p {
   }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .contact {
-    margin-right: 200px;
+    margin-right: auto;
   }
 }
 
@@ -958,6 +966,12 @@ h1, h2, h3, h4, p {
   overflow-y: scroll;
 }
 
+@media screen and (max-width: 470px) {
+  .backdrop {
+    padding: 60px 4px 30px 4px;
+  }
+}
+
 .modal {
   position: relative;
   background: #ffffff;
@@ -971,12 +985,27 @@ h1, h2, h3, h4, p {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (max-width: 470px) {
+  .modal {
+    padding: 10px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .modal {
     position: absolute;
     height: 609px;
     width: 450px;
-    top: 50%;
+    top: 70%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%) scale(1);
             transform: translate(-50%, -50%) scale(1);
@@ -985,6 +1014,7 @@ h1, h2, h3, h4, p {
 
 @media screen and (min-width: 1200px) {
   .modal {
+    top: 56%;
     height: 581px;
     width: 528px;
   }
@@ -1127,6 +1157,12 @@ h1, h2, h3, h4, p {
   position: absolute;
   border: solid 2px #212121;
   border-radius: 3px;
+}
+
+@media screen and (max-width: 396px) {
+  .form__checkbox-back {
+    top: 20%;
+  }
 }
 
 .form__checkbox {

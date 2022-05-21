@@ -9,7 +9,7 @@ body {
   color: #757575;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
   body {
     padding-top: 60px;
   }
@@ -95,9 +95,17 @@ h1, h2, h3, h4, p {
   width: 100%;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .header {
     position: relative;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 
@@ -117,9 +125,9 @@ h1, h2, h3, h4, p {
   }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .header__nav {
-    margin-left: 200px;
+    margin-left: auto;
   }
 }
 
@@ -261,9 +269,9 @@ h1, h2, h3, h4, p {
   }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .contact {
-    margin-right: 200px;
+    margin-right: auto;
   }
 }
 

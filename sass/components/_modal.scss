@@ -10,6 +10,10 @@
     padding: 93px 15px;
     overflow-y: scroll;
 
+    @media screen and (max-width:470px){
+        padding: 60px 4px 30px 4px;
+
+    }
 }
 .modal{
     position: relative;
@@ -23,20 +27,32 @@
     border-radius: 4px;
     padding: 40px;
     transition: transform 250ms $cubic ;
+    @media screen and (max-width:470px){
+        padding: 10px;
+
+    }
+    @media screen and (min-width:480px)
+    {
+        width: 450px;
+        height: 609px;
+        margin-left: auto;
+        margin-right: auto;
+    }
     @media screen and (min-width:768px){
         position: absolute;
         height: 609px;
          width: 450px;
 
-        top: 50%;
+        top: 70%;
         left: 50%;
+      
 
       transform: translate(-50%,-50%) scale(1);
           
 
     }
     @media screen and (min-width:1200px){
-      
+        top: 56%;
    height: 581px;
    width:   528px ; 
     }
@@ -177,6 +193,12 @@
          position: absolute;
          border: solid 2px $black-main;
          border-radius: 3px;  
+
+         @media screen and (max-width:396px){
+           top: 20%;  
+         }
+         
+
         
      }
      .form__checkbox{
@@ -185,6 +207,7 @@
         //  padding-left: 37px;
          line-height: 14px;
          font-size: 12px;
+         
 
      }
      .form__checkbox-icon{
