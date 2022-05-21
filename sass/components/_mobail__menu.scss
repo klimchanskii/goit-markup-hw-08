@@ -105,22 +105,6 @@
       
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .menu-button{
     display: inline-block;
     position: fixed;
@@ -132,12 +116,20 @@
     border: none;
     background-color: transparent;
     z-index: 999;
-    
+
     margin-right: 15px;
+
+    transition: color 250ms $cubic;
+    &:hover{
+        color: $blue-main;
+    }
     @media screen and (min-width:767px) {
         display: none;
         
     }
+}
+.menu-button-adctive{
+    fill: currentColor;
 }
 .menu-button .menu-button__open{
     display: none;
@@ -147,4 +139,7 @@
 }
 .menu-button.is-open .menu-button__close{
     display: none;
+}
+.menu-button__open,.menu-button__close{
+    fill: currentColor;
 }
