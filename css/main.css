@@ -1172,6 +1172,7 @@ h1, h2, h3, h4, p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  overflow-y: scroll;
 }
 
 .mobail-container.is-open {

@@ -23,8 +23,8 @@
             
             <a href="/index.html" class="header__logo">Web<span class="header__logo-black">Studio</span> </a>  
         <ul class="header__list" >
-            <li class="header__item"> <a href="./index.html" class="header__link header__link--border" >Студия</a></li>
-            <li class="header__item"><a href="./portfolio.html" class="header__link "> Портфолио</a></li>
+            <li class="header__item"> <a href="./index.html" class="header__link " >Студия</a></li>
+            <li class="header__item"><a href="./portfolio.html" class="header__link header__link--border"> Портфолио</a></li>
             <li class="header__item"><a href="" class="header__link"> Контакты</a></li>
         </ul>
         </nav > 
@@ -104,8 +104,23 @@
                 <li class="navigation__item navigation__item-padding"><button class="navigation__button" type="button" >Маркетинг</button></li>
             </ul>
             <ul class="works">
-                <li class="works__item"><a href="" class="works__link" ><div class="works__img"> <img  src="./images/0.jpg"  alt="Веб-сайт"
-                    width="370" >
+                <li class="works__item"><a href="" class="works__link" ><div class="works__img"> 
+                    <picture>
+                        <source 
+                        srcset="./images/portfolio/one/mob.jpg 1x, 
+                        ./images/portfolio/one/mob@2x.jpg 2x" 
+                        media="(max-width:767px)" 
+                        type="image/jpeg">
+                        <source srcset="./images/portfolio/one/desktop.jpg 1x,
+                         ./images/portfolio/one/desktop@2x.jpg 2x" 
+                         media="(min-width:1200px)" 
+                         type="image/jpeg">
+                        <source srcset="./images/portfolio/one/tablet.jpg 1x,
+                         ./images/portfolio/one/tablet@2x.jpg 2x"
+                          media="(min-width:768px)" 
+                          type="image/jpeg">
+                    <img  src="./images/portfolio/one/mob.jpg"  alt="Веб-сайт"
+                     > </picture>
                     <p class="works__site">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. 
                     Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                     </div>  
@@ -115,7 +130,25 @@
     
     
                 <li class="works__item"><a href="" class="works__link">
-                    <div class="works__img"> <img  src="./images/1.jpg" alt="Дизайн" width="370" >
+                    <div class="works__img">
+                        <picture>
+                            <source 
+                            srcset="./images/portfolio/two/mob.jpg 1x, 
+                            ./images/portfolio/two/mob@2x.jpg 2x" 
+                            media="(max-width:767px)" 
+                            type="image/jpeg">
+                            <source srcset="./images/portfolio/two/desktop.jpg 1x,
+                            ./images/portfolio/two/desktop@2x.jpg 2x" 
+                             media="(min-width:1200px)" 
+                             type="image/jpeg">
+                            <source srcset="./images/portfolio/two/tablet.jpg 1x,
+                            ./images/portfolio/two/tablet@2x.jpg 2x"
+                              media="(min-width:768px)" 
+                              type="image/jpeg">
+                        <img  src="./images/portfolio/two/mob.jpg"  alt="Дизайн"
+                         > </picture> 
+
+
                          <p class="works__site">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. 
                          Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                          </div>
@@ -128,7 +161,7 @@
                     <div class="works__img"> <img  src="./images/3.jpg" alt="Приложение" width="370" >
                          <p class="works__site">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. 
                          Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
-                         </div>
+                         </div> 
     
                     <div class="works__name"><h2>Ресторан Seafood</h2> <p>Приложение</p></div>
                      </a></li>
@@ -184,16 +217,15 @@
                              Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                              </div>
                     <div class="works__name"><h2>Growing Business</h2> <p>Приложение</p></div>
-                    </a></li>
-            </ul>
+                    </a></li> 
               </div> 
         </section>
     </main>
     <!-- FOOTER -->
     <footer class="back-footer">
-        
+    
         <div class="footer container ">
-        <div> 
+       <div class="footre-tablet"> <div> 
     <a href="./index.html" class="footer__logo">Web<span class="footer__logo-white">Studio</span> </a>
     <address  >
         <ul >
@@ -209,9 +241,9 @@
         <li class="footer-social__item"><a class="footer-social__link" href=""><svg class="footer-social__icon"><use href="./images/icons.svg#icon-twitter-white"></use></svg></a></li>
         <li class="footer-social__item"><a class="footer-social__link" href=""><svg class="footer-social__icon"><use href="./images/icons.svg#icon-facebook-white"></use></svg></a></li>
         <li class="footer-social__item"><a class="footer-social__link" href=""><svg class="footer-social__icon"><use href="./images/icons.svg#icon-linkedin-white"></use></svg></a></li>
-    
+
     </ul>
-    </div>
+    </div></div>
     <div class="newsletter">
         <form >
         <label class=" newsletter__title" for="newsletter">Подпишитесь на рассылку</label>
@@ -221,9 +253,9 @@
             <svg width="24px" height="24px"><use href="./images/icons.svg#icon-icon-send"></use></svg></span></button>
     </form>
     </div>
-    
+
     </div>
-    </footer>
+</footer>
     <script src="./menu.js"></script>
     
 </body>
