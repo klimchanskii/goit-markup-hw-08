@@ -123,12 +123,6 @@ h1, h2, h3, h4, p {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .header__nav {
-    margin-left: auto;
-  }
-}
-
 .header__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -264,12 +258,6 @@ h1, h2, h3, h4, p {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .contact {
-    margin-right: auto;
   }
 }
 

@@ -1,11 +1,9 @@
 .header{display: flex;
     align-items: center;
     border-bottom: 1px solid $back-cards;
-    // position: fixed;
-    // z-index: 999;
+    
     background-color: $white-main;
-    // top: 0;
-    // width: 100%;
+   
     @media screen and (max-width:767px){
         justify-content: space-between;
        
@@ -31,9 +29,7 @@
     @media screen and (min-width:767px) {
         padding: 0;
     }
-    @media screen and (min-width:1200px) {
-        margin-left: auto;
-    }
+  
 }
 
 
@@ -142,10 +138,7 @@
            flex-direction: row;
            align-items: baseline ; 
         }
-        @media screen and (min-width:1200px) {
-             margin-right: auto;
-         
-         }
+        
          }
         
         .contact__info{
