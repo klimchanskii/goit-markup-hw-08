@@ -22,12 +22,10 @@
         line-height: 1.714;
         letter-spacing: 0.03em;
         color:  $gray-main;
-        @media  screen and (max-width:767px) {
-            padding-top: 60px;
-            
-        }
+        
         
     }
+    
     ul,li{list-style-type:none;
     padding-left: 0px;
     margin: 0;

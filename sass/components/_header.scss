@@ -1,11 +1,17 @@
 .header{display: flex;
     align-items: center;
     border-bottom: 1px solid $back-cards;
-    position: fixed;
-    z-index: 999;
+    // position: fixed;
+    // z-index: 999;
     background-color: $white-main;
-    top: 0;
-    width: 100%;
+    // top: 0;
+    // width: 100%;
+    @media screen and (max-width:767px){
+        justify-content: space-between;
+       
+        
+        
+    }
     @media screen and (min-width:768px){
         position: relative;
         

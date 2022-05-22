@@ -8,12 +8,6 @@ body {
   color: #757575;
 }
 
-@media screen and (max-width: 767px) {
-  body {
-    padding-top: 60px;
-  }
-}
-
 ul, li {
   list-style-type: none;
   padding-left: 0px;
@@ -102,11 +96,15 @@ h1, h2, h3, h4, p {
       -ms-flex-align: center;
           align-items: center;
   border-bottom: 1px solid #EEEEEE;
-  position: fixed;
-  z-index: 999;
   background-color: #ffffff;
-  top: 0;
-  width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -486,20 +484,18 @@ h1, h2, h3, h4, p {
   }
 }
 
-@media screen and (min-width: 768px) {
-  /* icon */
-  .feature__tumb {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    background-color: #F5F4FA;
-  }
+/* icon */
+.feature__tumb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #F5F4FA;
 }
 
 .about-us__list {
@@ -1233,6 +1229,12 @@ h1, h2, h3, h4, p {
   }
 }
 
+.mobail-menu {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
 .mobail-menu__link {
   font-style: normal;
   font-weight: 500;
@@ -1249,10 +1251,6 @@ h1, h2, h3, h4, p {
 
 .mobail-menu__item:not(:last-child) {
   margin-bottom: 32px;
-}
-
-.mobail-menu__item:nth-child(3) {
-  margin-bottom: 302px;
 }
 
 .mobail-menu__contact__item {
@@ -1282,13 +1280,13 @@ h1, h2, h3, h4, p {
   margin-top: 64px;
 }
 
-.mobail-menu__social-item {
-  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
-          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+.mobail-menu__social-item:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  padding-right: 10px;
 }
 
-.mobail-menu__social-item + .mobail-menu__social-item {
-  margin-left: 20px;
+.mobail-menu__social-item:not(:first-child) {
+  margin-left: 10px;
 }
 
 .mobail-menu__social-link {
@@ -1302,10 +1300,6 @@ h1, h2, h3, h4, p {
 
 .menu-button {
   display: inline-block;
-  position: fixed;
-  top: 10px;
-  right: 20px;
-  z-index: 44;
   margin: 0;
   padding: 0;
   border: none;

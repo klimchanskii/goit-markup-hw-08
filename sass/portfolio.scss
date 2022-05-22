@@ -159,6 +159,7 @@ justify-content: flex-start;
    .works__img{
     width: 100%;
     object-fit: cover;
+    display: block;
    }
    .works__site{
        position: absolute;
